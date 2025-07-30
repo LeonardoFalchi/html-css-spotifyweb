@@ -35,7 +35,7 @@ a {
     color: #686868;
     padding-left: 20px;
     padding-top: 15px;
-    padding-bottom: 15px;
+    overflow: hidden;
 }
 
 .logo-text {
@@ -44,8 +44,18 @@ a {
     height: 80px;
 }
 
+.logo-small {
+    width: 100%;
+    height: 80px;
+}
+
+#logo-small {
+    display: none;
+}
+
 #logo {
     height: 40px;
+    display: flex;
 
 }
 
@@ -61,8 +71,8 @@ a {
 
 .top-list img {
     margin-right: 5px;
-    color: #686868;
     height: 25px;
+    opacity: 0.5;
 }
 
 .playlist-list,
@@ -81,7 +91,7 @@ a {
     color: white;
 }
 
-.fa-sharp {
+.playlist-list i {
     font-size: 40px;
     margin-left: -8px;
 }
@@ -92,7 +102,8 @@ a {
 
 }
 
-.install {
+.install ,
+.profile {
     display: flex;
     align-items: center;
     
@@ -142,7 +153,87 @@ a {
 
 /*FOOTER*/
 
-.player {
+.bottom-bar {
     background-color: #282828;
     height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.sx-bar ,
+.dx-bar {
+    flex-basis: 20%;
+    display: flex;
+    align-items:center ;
+
+}
+
+.sx-bar img {
+    width: 50px;
+    height: 50px;
+}
+
+.sx-bar i {
+    
+}
+
+.player {
+    flex-grow: 1;
+}
+
+
+
+/*XS VERSION*/
+@media screen and (max-width: 552px) {
+
+
+/*sidebar*/
+.sidebar {
+    flex-basis: 50px;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.sidebar span ,
+.playlist-list ,
+.separatore ,
+.logo-text ,
+#logo {
+    display: none;
+}
+
+
+#logo-small ,
+.logo-small {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.top-list img {
+    margin-right: 0;
+}
+
+.top-list li {
+    margin-bottom: 10px;
+}
+
+.side-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.install img {
+    margin-left: 5px;
+}
+
+.profile img {
+    margin-top: 30px;
+}
+
+
 }
