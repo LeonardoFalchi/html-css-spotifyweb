@@ -43,8 +43,9 @@ ul {
 
 .logo-text {
     width: 100%;
-    display: flex;
     height: 80px;
+    display: flex;
+    flex-shrink: 0;
 }
 
 .logo-small {
@@ -101,14 +102,12 @@ ul {
 .side-bottom {
     margin-top: auto;
     height: 110px;
-
 }
 
 .install,
 .profile {
     display: flex;
     align-items: center;
-
 }
 
 .install img {
@@ -121,7 +120,6 @@ ul {
     width: 190px;
     margin-top: 20px;
     margin-bottom: 30px;
-
 }
 
 .profile img {
@@ -131,14 +129,11 @@ ul {
     background-color: #686868;
 }
 
-
-
 /*MAIN CONTAINER*/
 .main-container {
     position: relative;
     display: flex;
     flex-grow: 1;
-    overflow-y: auto;
     background-color: #141922;
 }
 
@@ -155,12 +150,12 @@ ul {
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+    overflow-y: auto;
 }
 
 /*menu*/
 .menu {
     width: 100%;
-
 }
 
 .item-list {
@@ -196,6 +191,10 @@ h2 {
     margin-top: 25px;
 }
 
+.container-popolari .row .col .card h3 {
+    margin-bottom: 30px;
+}
+
 .row {
     display: flex;
     gap: 15px;
@@ -211,6 +210,10 @@ h2 {
 
 .card img {
     max-width: 100%;
+}
+
+.container-popolari .row .col .card img {
+    border-radius: 50%;
 }
 
 .card figcaption {
@@ -230,12 +233,10 @@ h2 {
     font-weight: bold;
 }
 
-.container-creato .col ,
+.container-creato .col,
 .container-popolari .col {
     margin-top: 30px;
 }
-
-
 
 /*FOOTER*/
 
@@ -256,7 +257,6 @@ h2 {
 .player {
     flex-grow: 1;
 }
-
 
 /*sx-bar*/
 .sx-bar {
@@ -333,7 +333,6 @@ h2 {
 }
 
 /*player*/
-
 .command-player,
 .time-music {
     display: flex;
@@ -361,7 +360,6 @@ h2 {
     font-weight: bold;
 }
 
-
 .time-bar {
     height: 5px;
     width: 60%;
@@ -380,11 +378,11 @@ h2 {
 
 
 
-/*MD VERSION*/
+/*******************  MD VERSION  ********************/
 @media screen and (max-width: 878px) {
 
-    /*recently played*/
-    .recently-played-row {
+
+    .row {
         flex-wrap: wrap;
     }
 
@@ -395,15 +393,14 @@ h2 {
 }
 
 
-/*S VERSION*/
+/********************  S VERSION  **********************/
 @media screen and (max-width: 639px) {
-
 
     .col {
         max-width: calc((100% / 2) - (15px /2));
     }
 
-    .recently-played-row {
+    .row {
         flex-wrap: wrap;
     }
 
@@ -413,9 +410,8 @@ h2 {
 
 
 
-/*XS VERSION*/
+/********************  XS VERSION  ***********************/
 @media screen and (max-width: 552px) {
-
 
     /*sidebar*/
     .sidebar {
@@ -464,13 +460,7 @@ h2 {
         margin-top: 30px;
     }
 
-
-
-
-
-    /*FOOTER*/
-
-
+    /*footer*/
     /*sx-bar*/
     .sx-bar img {
         width: 30px;
