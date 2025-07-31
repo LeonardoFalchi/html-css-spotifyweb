@@ -140,8 +140,25 @@ ul {
 .cta {
     position: fixed;
     background: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: calc(100% - 230px);
     height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cta-button {
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    height: 45px;
+    border: 1px solid white;
+    padding: 0 45px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+
 }
 
 /*contenuto*/
