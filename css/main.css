@@ -133,7 +133,7 @@ ul {
 .main-container {
     position: relative;
     display: flex;
-    flex-grow: 1;
+    width: calc(100% - 230px);
     background-color: #141922;
 }
 
@@ -476,6 +476,15 @@ h2 {
     .profile img {
         margin-top: 30px;
     }
+
+    /*contenuto*/
+    .main-container {
+    width: calc(100% - 50px);
+}
+
+.cta {
+    width: calc(100% - 50px);
+}
 
     /*footer*/
     /*sx-bar*/
