@@ -167,7 +167,10 @@ ul {
     margin-right: 10px;
     border-radius: 30px;
     cursor: pointer;
+}
 
+.cta-button:hover {
+    transform: scale(1.05);
 }
 
 /*contenuto*/
@@ -198,6 +201,16 @@ ul {
     flex: 1 0 auto;
     color: #686868;
     font-weight: bold;
+}
+
+.item-list li:hover ,
+.top-list li:hover ,
+.playlist-list li:hover ,
+.install:hover ,
+.nome-brano span:hover ,
+.fa-heart:hover ,
+.fa-folder:hover {
+    color: white;
 }
 
 /*row e col*/
