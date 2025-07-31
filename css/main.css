@@ -160,7 +160,7 @@ ul {
 /*menu*/
 .menu {
     width: 100%;
-    
+
 }
 
 .item-list {
@@ -213,8 +213,8 @@ ul {
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 8px;
-    
-    
+
+
 }
 
 .card span {
@@ -222,9 +222,6 @@ ul {
     color: #686868;
     font-weight: bold;
 }
-
-
-
 
 
 
@@ -371,7 +368,36 @@ ul {
 
 
 
+/*MD VERSION*/
+@media screen and (max-width: 878px) {
 
+    /*recently played*/
+    .recently-played-row {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        max-width: calc((100% / 4) - (45px / 4));
+    }
+
+}
+
+
+/*S VERSION*/
+@media screen and (max-width: 639px) {
+
+
+    .col {
+        max-width: calc((100% / 2) - (15px /2));
+    }
+
+    .recently-played-row {
+        flex-wrap: wrap;
+    }
+
+
+
+}
 
 
 
@@ -453,11 +479,6 @@ ul {
     .container-dx-bar {
         gap: 4px;
     }
-
-
-
-
-
 
 
 }
