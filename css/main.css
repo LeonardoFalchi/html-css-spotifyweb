@@ -179,15 +179,24 @@ ul {
     font-weight: bold;
 }
 
-/*recently played*/
-.container-played h2 {
+/*row e col*/
+h2 {
     font-size: 24px;
     color: white;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
-.recently-played-row {
+.container-creato h2,
+.container-popolari h2 {
+    margin-bottom: 5px;
+}
+
+.container-popolari h2 {
+    margin-top: 25px;
+}
+
+.row {
     display: flex;
     gap: 15px;
 }
@@ -213,14 +222,17 @@ ul {
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 8px;
-
-
 }
 
-.card span {
+.contenuto span {
     font-size: 12px;
     color: #686868;
     font-weight: bold;
+}
+
+.container-creato .col ,
+.container-popolari .col {
+    margin-top: 30px;
 }
 
 
